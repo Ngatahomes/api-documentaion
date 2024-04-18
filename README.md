@@ -30,7 +30,7 @@ End-point: https://homes.ngata.co.tz/mobile
 
 
 > <b style="color:orange">GET</b> &emsp;<span style="color: lightblue">/rent-to-own-properties</span> <br> <hr>
-> &emsp;&emsp;&emsp;It fetches a list of verified rent-to-own properties (Off-plan and Existing) 
+> It fetches a list of verified rent-to-own properties (Off-plan and Existing) 
 <br>
 <br>
 
