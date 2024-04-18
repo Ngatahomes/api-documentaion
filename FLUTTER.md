@@ -1,5 +1,5 @@
 
-## DART DATA ENCRYPTION / DESCRIPTION
+## DART DATA ENCRYPTION AND DECRYPTION
 ### Installation (encrypt: ^5.0.3)
 You can install the package from the command line:
 <br> With dart:

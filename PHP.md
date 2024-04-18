@@ -1,5 +1,5 @@
 
-## PHP DATA ENCRYPTION / DESCRIPTION
+## PHP DATA ENCRYPTION AND DECRYPTION
 ### Code Example
 ### Encryption
 ```php Encryption codeCopyEnabled
