@@ -90,7 +90,7 @@ String aesEncrypt(String plainText, String iv, String key) {
 ```
 
 ### Decryption
-```dart Decryption codeCopyEnabled="4"
+```dart Decryption codeCopyEnabled{4}
 import 'package:encrypt/encrypt.dart';
 import 'dart:convert';
 
