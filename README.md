@@ -42,8 +42,8 @@ End-point: https://homes.ngata.co.tz/mobile
     "encrypted": true
 }
 ```
-> [payload] : Returns encrypted data for a list of verified rent-to-own properties <br>
-> [encrypted] : Returns status of data either encrypted or not, but always is encrypted = true
+> [payload][string] : Returns encrypted data for a list of verified rent-to-own properties <br>
+> [encrypted][boolean] : Returns status of data either encrypted or not, but always is encrypted = true
 
 ### Decrypted Payload Data Type
 ```json
@@ -59,6 +59,10 @@ End-point: https://homes.ngata.co.tz/mobile
             "projectId": "061/03",
             "description": null,
             "total_rooms": 2,
+            "map_coordinate": {
+                "latitude": "-6.781848",
+                "longitude": "39.2337241"
+            },
             "facilities": [
                 {
                     "id": 2,
@@ -86,6 +90,10 @@ End-point: https://homes.ngata.co.tz/mobile
             "projectId": "EST00093",
             "description": "2 Bedroom House",
             "total_sqm": 550,
+            "map_coordinate": {
+                "latitude": "-6.781848",
+                "longitude": "39.2337241"
+            },
             "drawing": {
                 "id": 186,
                 "codeID": "DRW00187",
@@ -118,13 +126,16 @@ End-point: https://homes.ngata.co.tz/mobile
 > <b style="color:orange;">[ selling_cash_price ]</b><span style="color:lightblue">[ float ]</span> : Returns project cash selling price.<br><hr>
 > <b style="color:orange;">[ project_type ]</b><span style="color:lightblue">[ string ]</span> : Returns project type eg. off-plan or project (means existing project)<br><hr>
 > <b style="color:orange;">[ house_type ]</b><span style="color:lightblue">[ string ]</span> : Returns projecct type eg. Stand Alone, Ground Duplex, Appartment etc.<br><hr>
-> <b style="color:orange;">[ location ]</b><span style="color:lightblue">[ string ]</span> : Return location where project located. <br><hr>
+> <b style="color:orange;">[ location? ]</b><span style="color:lightblue">[ string|null ]</span> : Return location where project located. <br><hr> 
 > <b style="color:orange;">[ projectId ]</b><span style="color:lightblue">[ string ]</span> : Returns unique ID that used to identify a particular project.<br><hr>
-> <b style="color:orange;">[ description ]</b><span style="color:lightblue">[ string ]</span> : Returns a detailed explanation about project.<br><hr>
-> <b style="color:orange;">[ nearby ]</b><span style="color:lightblue">[ array ]</span> : Returns a list of features nearby the project eg. school, hospital, Bus stand etc.<hr>
+> <b style="color:orange;">[ description? ]</b><span style="color:lightblue">[ string ]</span> : Returns a detailed explanation about project.<br><hr>
+> <b style="color:orange;">[ map_coordinate ]</b><span style="color:lightblue">[ object|map ]</span> : Returns location coordinates that will be used to display project on map. <br><hr>
+> <b style="color:orange;">[ map_coordinate ][ latitude? ]</b><span style="color:lightblue">[ float|null ]</span> : Returns latitude. <br><hr>
+> <b style="color:orange;">[ map_coordinate ][ longitude? ]</b><span style="color:lightblue">[ float|null ]</span> : Returns longitude. <br><hr>
+> <b style="color:orange;">[ nearby? ]</b><span style="color:lightblue">[ array|null ]</span> : Returns a list of features nearby the project eg. school, hospital, Bus stand etc.<hr>
 > <b style="color:orange;">[ nearby ][ name ]</b><span style="color:lightblue">[ string ]</span> : Returns nearby feature name<hr>
 > <b style="color:orange;">[ nearby ][ icon ]</b><span style="color:lightblue">[ string ]</span> : Returns nearby feature icon<hr>
-> <b style="color:orange;">[ facilities ]</b><span style="color:lightblue">[ array ]</span> : Returns a list of facilities around the project eg. Air conditioner, Fan, Coach, Barcon etc.<hr>
+> <b style="color:orange;">[ facilities? ]</b><span style="color:lightblue">[ array|null ]</span> : Returns a list of facilities around the project eg. Air conditioner, Fan, Coach, Barcon etc.<hr>
 > <b style="color:orange;">[ facilities ][ name ]</b><span style="color:lightblue">[ string ]</span> : Returns facilitiy name.<hr>
 > <b style="color:orange;">[ facilities ][ icon ]</b><span style="color:lightblue">[ string ]</span> : Returns facilitiy icon.<hr>
 > <b style="color:orange;">[ facilities ][ type ]</b><span style="color:lightblue">[ string ]</span> : Returns facilitiy icon type eg. fa => fontawesome, bi => bootstrap icon, si => silicon icon.<hr>
@@ -135,10 +146,10 @@ End-point: https://homes.ngata.co.tz/mobile
 
 > ### Parameters appear only to off-plan projects 
 > <b style="color:orange;">[ total_sqm ]</b><span style="color:lightblue">[ float ]</span> : Returns total square meters occupied by project<hr>
-> <b style="color:orange;">[ drawing ]</b><span style="color:lightblue">[ object|null ]</span> : Return drawing information.<br><hr>
+> <b style="color:orange;">[ drawing? ]</b><span style="color:lightblue">[ object|null ]</span> : Return drawing information.<br><hr>
 > <b style="color:orange;">[ drawing ][ codeID ]</b><span style="color:lightblue">[ string ]</span> : Returns unique ID that used to identify a particular drawing.<br><hr>
 > <b style="color:orange;">[ drawing ][ arch_name ]</b><span style="color:lightblue">[ string ]</span> : Returns architect name.<br><hr>
-> <b style="color:orange;">[ drawing ][ arch_email ]</b><span style="color:lightblue">[ string|null ]</span> : Returns architect email.<br><hr>
+> <b style="color:orange;">[ drawing ][ arch_email? ]</b><span style="color:lightblue">[ string|null ]</span> : Returns architect email.<br><hr>
 > <b style="color:orange;">[ drawing ][ arch_phone ]</b><span style="color:lightblue">[ string ]</span> : Returns architect phone number.<br><hr>
 > <b style="color:orange;">[ drawing ][ arch_profile_picture ]</b><span style="color:lightblue">[ string ]</span> : Returns architect profile picture.
 > <br>
