@@ -50,13 +50,14 @@ End-point: https://homes.ngata.co.tz/mobile
 {
     "existing": [
         {
+            "projectId": 209,
+            "codeId": "061/03",
             "monthly_price": 1034868.7151420625,
             "currency": "TZS",
             "selling_cash_price": 88365350.85,
             "project_type": "project",
             "house_type": "Ground duplex",
             "location": "Mwananyamala, Kinondoni, Dar es Salaam",
-            "codeId": "061/03",
             "description": "Nyumba ipo mahali pazuri karibu na huduma muhimu za jamii kama Hospitali, shule n.k \r\nMaji yapo ndani ya nyumba masaa 24.",
             "total_rooms": 2,
             "redirect_url": "https://homes.ngata.co.tz/rent-to-own/project-details/209/project",
@@ -100,13 +101,14 @@ End-point: https://homes.ngata.co.tz/mobile
     ], 
     "offplan": [
         {
+            "projectId": 93,
+            "codeId": "EST00093",
             "monthly_price": 1946093.54625,
             "currency": "TZS",
             "selling_cash_price": 166173000,
             "project_type": "off-plan",
             "house_type": "Stand Alone",
             "location": "Goba, Kinondoni, Dar es Salaam",
-            "codeId": "EST00093",
             "description": "2 Bedroom House",
             "total_sqm": 550,
             "redirect_url": "https://homes.ngata.co.tz/rent-to-own/project-details/93",
@@ -165,9 +167,9 @@ End-point: https://homes.ngata.co.tz/mobile
 > <b style="color:orange;">[ project_type ]</b><span style="color:lightblue">[ string ]</span> : Returns project type eg. off-plan or project (means existing project)<br><hr>
 > <b style="color:orange;">[ house_type ]</b><span style="color:lightblue">[ string ]</span> : Returns projecct type eg. Stand Alone, Ground Duplex, Appartment etc.<br><hr>
 > <b style="color:orange;">[ location? ]</b><span style="color:lightblue">[ string|null ]</span> : Return location where project located. <br><hr> 
-> <b style="color:orange;">[ projectId ]</b><span style="color:lightblue">[ string ]</span> : Returns unique ID that used to identify a particular project.<br><hr>
+> <b style="color:orange;">[ projectId ]</b><span style="color:lightblue">[ int ]</span> : Returns unique ID that used to identify a particular project.<br><hr>
 > <b style="color:orange;">[ codeId ]</b><span style="color:lightblue">[ string ]</span> : Returns unique project label.<br><hr>
-> <b style="color:orange;">[ description? ]</b><span style="color:lightblue">[ string ]</span> : Returns a detailed explanation about project.<br><hr>
+> <b style="color:orange;">[ descriptions? ]</b><span style="color:lightblue">[ string ]</span> : Returns a detailed explanation about project.<br><hr>
 > <b style="color:orange;">[ redirect_url ]</b><span style="color:lightblue">[ string ]</span> : Returns url for webview, it displays project details on web. <br><hr>
 > <b style="color:orange;">[ images ]</b><span style="color:lightblue">[ string ]</span> : Returns project images. <br><hr>
 > <b style="color:orange;">[ images ][ path ]</b><span style="color:lightblue">[ string ]</span> : Returns image source url. <br><hr>
