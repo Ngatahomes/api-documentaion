@@ -1,4 +1,4 @@
-# API DOCUMENTAION
+# API DOCUMENTATION
 >This Markdown document outlines the following:-
 >* AES encryption procedures, 
 >* POST and GET endpoints 
