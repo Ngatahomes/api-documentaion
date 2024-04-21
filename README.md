@@ -56,9 +56,28 @@ End-point: https://homes.ngata.co.tz/mobile
             "project_type": "project",
             "house_type": "Ground duplex",
             "location": "Mwananyamala, Kinondoni, Dar es Salaam",
-            "projectId": "061/03",
-            "description": null,
+            "codeId": "061/03",
+            "description": "Nyumba ipo mahali pazuri karibu na huduma muhimu za jamii kama Hospitali, shule n.k \r\nMaji yapo ndani ya nyumba masaa 24.",
             "total_rooms": 2,
+            "redirect_url": "https://homes.ngata.co.tz/rent-to-own/project-details/209/project",
+            "images": [
+                {
+                    "path": "https://filesystem.ngata.co.tz/properties/projects/houses/UNI-N15R8WYV-c10xaWVRGsCFFMfJROEaViBSoW8RTrGFaupcfA5C.png",
+                    "elevation": "front"
+                },
+                {
+                    "path": "https://filesystem.ngata.co.tz/properties/projects/houses/UNI-N15R8WYV-Z4o1wpzFjlZU6tjO9MCRAX7HA7nOIfQSBAiPqe0A.png",
+                    "elevation": "rear"
+                },
+                {
+                    "path": "https://filesystem.ngata.co.tz/properties/projects/houses/UNI-N15R8WYV-CqxLGJD1VBzERKTbU0iOc2mRVHTDpmsZTGRwDIu9.png",
+                    "elevation": "right"
+                },
+                {
+                    "path": "https://filesystem.ngata.co.tz/properties/projects/houses/UNI-N15R8WYV-XQjFhELRz5ei36lJRcuqqT9CG8nxCzCtr5qa1A59.png",
+                    "elevation": "left"
+                }
+            ],
             "map_coordinate": {
                 "latitude": "-6.781848",
                 "longitude": "39.2337241"
@@ -87,9 +106,28 @@ End-point: https://homes.ngata.co.tz/mobile
             "project_type": "off-plan",
             "house_type": "Stand Alone",
             "location": "Goba, Kinondoni, Dar es Salaam",
-            "projectId": "EST00093",
+            "codeId": "EST00093",
             "description": "2 Bedroom House",
             "total_sqm": 550,
+            "redirect_url": "https://homes.ngata.co.tz/rent-to-own/project-details/93",
+            "images": [
+                {
+                    "path": "https://filesystem.ngata.co.tz/documents/drawings/rsmrVanT1qVbFXiNNQciv8kCD2Rjl3ikbYVEm261.jpg",
+                    "elevation": "aerial"
+                },
+                {
+                    "path": "https://filesystem.ngata.co.tz/documents/drawings/Yzo7lCk7LuKLcMGmIeYkDqtpQM7b4EkBCwhvU4o9.jpg",
+                    "elevation": "sided"
+                },
+                {
+                    "path": "https://filesystem.ngata.co.tz/documents/drawings/Uu7vyPF3ydq1J5OxiwUFRzX2VMpGVpXZecmygQaU.jpg",
+                    "elevation": "layers"
+                },
+                {
+                    "path": "https://filesystem.ngata.co.tz/documents/drawings/0niM0gTUTBxBMdPZQXt8QErFZ0ocM7E38kvf3llg.jpg",
+                    "elevation": "others"
+                }
+            ],
             "map_coordinate": {
                 "latitude": "-6.781848",
                 "longitude": "39.2337241"
@@ -128,7 +166,12 @@ End-point: https://homes.ngata.co.tz/mobile
 > <b style="color:orange;">[ house_type ]</b><span style="color:lightblue">[ string ]</span> : Returns projecct type eg. Stand Alone, Ground Duplex, Appartment etc.<br><hr>
 > <b style="color:orange;">[ location? ]</b><span style="color:lightblue">[ string|null ]</span> : Return location where project located. <br><hr> 
 > <b style="color:orange;">[ projectId ]</b><span style="color:lightblue">[ string ]</span> : Returns unique ID that used to identify a particular project.<br><hr>
+> <b style="color:orange;">[ codeId ]</b><span style="color:lightblue">[ string ]</span> : Returns unique project label.<br><hr>
 > <b style="color:orange;">[ description? ]</b><span style="color:lightblue">[ string ]</span> : Returns a detailed explanation about project.<br><hr>
+> <b style="color:orange;">[ redirect_url ]</b><span style="color:lightblue">[ string ]</span> : Returns url for webview, it displays project details on web. <br><hr>
+> <b style="color:orange;">[ images ]</b><span style="color:lightblue">[ string ]</span> : Returns project images. <br><hr>
+> <b style="color:orange;">[ images ][ path ]</b><span style="color:lightblue">[ string ]</span> : Returns image source url. <br><hr>
+> <b style="color:orange;">[ images ][ elevation ]</b><span style="color:lightblue">[ string ]</span> : Returns projet image elevations (front, rear, right, left and others for existing projects) and (aerial, layers, sided and others for offplan projects ). <br><hr>
 > <b style="color:orange;">[ map_coordinate ]</b><span style="color:lightblue">[ object|map ]</span> : Returns location coordinates that will be used to display project on map. <br><hr>
 > <b style="color:orange;">[ map_coordinate ][ latitude? ]</b><span style="color:lightblue">[ float|null ]</span> : Returns latitude. <br><hr>
 > <b style="color:orange;">[ map_coordinate ][ longitude? ]</b><span style="color:lightblue">[ float|null ]</span> : Returns longitude. <br><hr>
@@ -142,7 +185,6 @@ End-point: https://homes.ngata.co.tz/mobile
 
 > ### Parameters appear only to existing projects
 > <b style="color:orange;">[ total_rooms ]</b><span style="color:lightblue">[ int ]</span> : Returns total rooms found in house.<hr>
-
 
 > ### Parameters appear only to off-plan projects 
 > <b style="color:orange;">[ total_sqm ]</b><span style="color:lightblue">[ float ]</span> : Returns total square meters occupied by project<hr>
